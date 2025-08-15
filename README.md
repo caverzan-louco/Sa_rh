@@ -1,6 +1,6 @@
 # Sa_rh
 
-# Plataforma RH Connect
+# Plataforma RH
 
 **Descrição**  
 Protótipo funcional de uma aplicação SPA (Single Page Application) com Angular 16+, simulando um sistema de recrutamento. Inclui cadastros de usuários e currículos, login, autorização com perfis (Admin e Usuário Comum), além de CRUD de vagas com interface responsiva.
