@@ -36,38 +36,6 @@ Protótipo funcional de uma aplicação SPA (Single Page Application) com Angula
 - 24 Horas trabalhadas ao todo
 
 
-##  Estrutura de Dados (db.json)
-
-### json
-{
-  "usuarios": [
-    {
-      "id": 1,
-      "email": "admin@rh.com",
-      "senha": "admin123",
-      "tipo": "admin"
-    }
-  ],
-  "curriculos": [
-    {
-      "id": "1",
-      "nome": "Carlão",
-      "idade": "77",
-      "formacao": "Ciência da Computação",
-      "descricao": "Especialista em BackEnd e bancos de dados relacionais."
-    }
-  ],
-  "vagas": [
-    {
-      "id": "1",
-      "nome": "Desenvolver FrontEnd Jr",
-      "foto": "foto1.jpg",
-      "descricao": "Trabalhar com HTML, CSS e JS",
-      "salario": 4000
-    }
-  ]
-}
-
 ## Diagrama Visual
 
           Sistema
