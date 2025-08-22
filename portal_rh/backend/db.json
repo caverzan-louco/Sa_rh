@@ -1,0 +1,13 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "admin@rh.com",
+      "senha": "admin123",
+      "tipo": "admin"
+    }
+  ],
+  "curriculos": [],
+  "vagas": []
+}
+
