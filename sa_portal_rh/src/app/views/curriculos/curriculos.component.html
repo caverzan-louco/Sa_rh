@@ -2,7 +2,9 @@
 <section class="cabecalho">
   <h1>Currículos</h1>
   <p>Lista de currículos cadastrados no sistema</p>
+  <button routerLink="/curriculos/novo" class="btn-adicionar">+ Adicionar Currículo</button>
 </section>
+
 <section class="lista-curriculos">
   <div *ngFor="let curriculo of curriculos" class="curriculo-item">
     <div class="curriculo-summary">

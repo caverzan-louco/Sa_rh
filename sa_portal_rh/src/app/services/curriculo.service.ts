@@ -24,7 +24,7 @@ export class CurriculoService {
       const urlAtualizado = `${this.apiUrl}/${id}`;
       return this.http.put<Curriculo[]>(urlAtualizado, curriculo);
     }
-  
+    
     removerCurriculo(id:any): Observable<Curriculo[]>{
       const urlDeletar = `${this.apiUrl}/${id}`;
       return this.http.delete<Curriculo[]>(urlDeletar);

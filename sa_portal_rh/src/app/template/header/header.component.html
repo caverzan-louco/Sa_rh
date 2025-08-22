@@ -1,0 +1,26 @@
+<nav class="navbar">
+  <a routerLink="/">Currículos e Vagas</a>
+
+  <div class="navItens">
+    <a routerLink="/curriculos" class="navlink">Currículos</a>
+    <a routerLink="/vagas" class="navlink">Vagas</a>
+
+<a *ngIf="(usuario$ | async)?.tipo === 'admin'"
+   routerLink="/admin"
+   class="navlink">
+  Admin
+</a>
+
+<button *ngIf="usuario$ | async" 
+(click)="logout()" 
+            class="navlink">
+Logout
+</button>
+
+    <a *ngIf="!(usuario$ | async)" 
+       routerLink="/login" 
+       class="navlink">
+      Login
+    </a>
+  </div>
+</nav>
