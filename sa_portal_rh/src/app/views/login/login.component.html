@@ -1,0 +1,22 @@
+<form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <h2>Login</h2>
+  <div>
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email" required />
+    <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+      Email is required and must be valid.
+    </div>
+  </div>
+  <div>
+    <label for="senha">Password:</label>
+    <input id="senha" type="password" formControlName="senha" required />
+    <div *ngIf="loginForm.get('senha')?.invalid && loginForm.get('senha')?.touched">
+      Password is required.
+    </div>
+  </div>
+  <button type="submit">Login</button>
+    <p class="switch-form">
+    Ainda não tem conta?
+    <a routerLink="/registro">Cadastre-se</a>
+  </p>
+</form>

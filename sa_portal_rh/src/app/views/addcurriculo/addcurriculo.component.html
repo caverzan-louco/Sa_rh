@@ -1,0 +1,71 @@
+<section class="cabecalho">
+  <h1>Adicionar Currículo</h1>
+  <p>Preencha os campos abaixo para cadastrar um novo currículo</p>
+</section>
+
+<form (ngSubmit)="onSubmit()" #curriculoForm="ngForm" class="form-curriculo" autocomplete="off">
+  
+  <div class="form-group">
+    <label>CPF:</label>
+    <input type="text" name="cpf" [(ngModel)]="curriculo.cpf" required placeholder="000.000.000-00" />
+  </div>
+
+  <div class="form-group">
+    <label>Nome:</label>
+    <input type="text" name="nome" [(ngModel)]="curriculo.nome" required placeholder="Digite o nome completo" />
+  </div>
+
+  <div class="form-group">
+    <label>Email:</label>
+    <input type="email" name="email" [(ngModel)]="curriculo.email" required placeholder="exemplo@dominio.com" />
+  </div>
+
+  <div class="form-group">
+    <label>Contato:</label>
+    <input type="text" name="contato" [(ngModel)]="curriculo.contato" required placeholder="(99) 99999-9999" />
+  </div>
+
+  <div class="form-group">
+    <label>Idade:</label>
+    <input type="number" name="idade" [(ngModel)]="curriculo.idade" required min="18" />
+  </div>
+
+  <div class="form-group">
+    <label>Foto de Perfil (nome do arquivo sem extensão):</label>
+    <input type="text" name="fotoPerfil" [(ngModel)]="curriculo.fotoPerfil" placeholder="ex: foto1" />
+  </div>
+
+  <div class="form-group">
+    <label>Interesses <small>(separe por vírgulas)</small>:</label>
+    <input type="text" name="interesses" [(ngModel)]="curriculo.interesses" required placeholder="ex: Tecnologia, Música" />
+  </div>
+
+  <div class="form-group">
+    <label>Experiência:</label>
+    <textarea name="experiencia" [(ngModel)]="curriculo.experiencia" placeholder="Descreva experiências anteriores"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label>Qualificações <small>(separe por vírgulas)</small>:</label>
+    <textarea name="qualificacoes" [(ngModel)]="curriculo.qualificacoes"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label>Idiomas <small>(separe por vírgulas)</small>:</label>
+    <input type="text" name="idiomas" [(ngModel)]="curriculo.idiomas" placeholder="ex: Português, Inglês" />
+  </div>
+
+  <div class="form-group">
+    <label>Formação <small>(separe por vírgulas)</small>:</label>
+    <input type="text" name="formacao" [(ngModel)]="curriculo.formacao" placeholder="ex: Ensino Médio, Graduação" />
+  </div>
+
+  <div class="form-group">
+    <label>Habilidades <small>(separe por vírgulas)</small>:</label>
+    <textarea name="habilidades" [(ngModel)]="curriculo.habilidades" placeholder="ex: Comunicação, Liderança"></textarea>
+  </div>
+
+  <button type="submit" class="btn-adicionar" [disabled]="curriculoForm.invalid">
+    Salvar Currículo
+  </button>
+</form>
